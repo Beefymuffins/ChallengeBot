@@ -48,7 +48,6 @@ client.on('interactionCreate', (interaction) => {
       }
       return;
     }
-
     // Handle regular slash command
     if (cmd) {
       cmd.run(client, interaction);
