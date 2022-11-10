@@ -48,9 +48,6 @@ module.exports = class RateScraperSlashCommand extends BaseSlashCommand {
         `https://api.coingecko.com/api/v3/simple/price?ids=solana%2Cbitcoin%2Cethereum&vs_currencies=usd`
       );
 
-      // Check if data exists
-      if (!data[coin].usd) throw Error();
-
       const priceEmbed = new EmbedBuilder()
         .setColor('Greyple')
         .setTitle('Current price of:');
